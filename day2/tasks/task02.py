@@ -3,6 +3,8 @@
 
 
 import asyncio
+import concurrent
+
 import random
 
 
@@ -18,8 +20,7 @@ async def get_string():
 
 
 async def main():
-    result = await asyncio.gather(*[get_string() for _ in range(4)])
-    print(result)
+    pass
 
 
 if __name__ == "__main__":
